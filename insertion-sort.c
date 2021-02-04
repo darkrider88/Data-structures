@@ -57,10 +57,11 @@ void main()
         printf("\n\n");
         
     }
-
+    printf("Sorted array: ");
     for(i = 0; i < size; i++)
     {
         printf("%d ", ar[i]);
     }
+    printf("\n");
 
 }
