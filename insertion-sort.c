@@ -10,7 +10,7 @@ void main()
         scanf("%d",&ar[i]);
     }
 
-    /* compact algo
+    
     for(i=1;i<size;i++)
     {
         key = ar[i];
@@ -18,14 +18,16 @@ void main()
         j = i-1;
         while(j>=0 && ar[j] > key)
         {
-            ar[j+1] = ar[j];
-            j = j-1;
+            ar[j+1] = ar[j]; 
+            j = j-1; // decreasing the value, to point previous element
         }
-        // storing the smallest element in the correct position
+        // storing the smallest element(key) in the correct position
         ar[j+1] = key;      
     }
-    */
+    
 
+    //     use this if you want to see each step
+    /*
     //sorting starts here
     for(i=1;i<size;i++)
     {
@@ -57,6 +59,7 @@ void main()
         printf("\n\n");
         
     }
+    */
     printf("Sorted array: ");
     for(i = 0; i < size; i++)
     {
